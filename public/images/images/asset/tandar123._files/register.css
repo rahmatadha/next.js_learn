@@ -1,0 +1,129 @@
+﻿.registration-page .inputs label {
+    display: flex;
+}
+
+.registration-page .center-1 .page-title {
+    text-align: left;
+}
+
+.registration-page .page-title a{
+    text-decoration:underline;
+    font-size:13.5px;
+}
+.registration-page .page-title {
+    display: flex;
+    border-bottom:unset;
+}
+.registration-page .page-title a:hover{
+    color:cornflowerblue;
+}
+.registration-page .text-footer{
+    text-align:center;
+}
+.registration-page .text-footer a{
+    text-decoration:underline;
+}
+.registration-page .text-footer a:hover{
+    color:cornflowerblue;
+}
+
+.sms-verification-page h2,
+.sms-verification-page p, 
+.sms-verification-page h3,
+.sms-verification-page .buttons-sms-verif,
+.sms-verification-page .input-verif {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.sms-verification-page .input-verif input{
+    width:50px;
+    margin:20px 5px;
+    height:50px;
+    border:unset;
+    border-bottom:1px solid #000;
+}
+
+.sms-verification-page .buttons-sms-verif .verif-register-next-step-button {
+    width: 350px;
+    height: 30px;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 2px;
+}
+.sms-verification-page .buttons-sms-verif .verif-register-next-step-button:hover {
+    background-color: #fff;
+    color:#000;
+    
+}
+.wrepper-register{
+    width:80%;
+    margin:auto;
+}
+.wrepper-register .inputs label{
+    display:flex;
+}
+.wrepper-register .inputs .inputRegister{
+    width:360px;
+}
+.wrepper-register .inputs .KinputRegister{
+    width:291px;
+    vertical-align:bottom;
+}
+.wrepper-register .inputs select {
+    width: 60px;
+    margin: 0 10px 0 0;
+}
+.wrepper-register .inputs input{
+    height:41px;
+}
+.register{
+    width:35%;
+}
+.register-button-popup {
+    width:360px;
+    height:30px;
+    background-color:#000;
+    border:1px solid #000;
+    color:#fff;
+    border-radius:2px;
+}
+/* Modal Content */
+.register-modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+.modal-header .header-register {
+    padding:20px 0;
+}
+@media all and (min-width: 1001px) {
+    .registration-page .page-title {
+        width: 43%;
+        margin: auto;
+    }
+
+    .registration-page .page-title h1 {
+        padding: 0 57% 0 2%;
+    }
+}
+
+@media all and (min-width: 1367px) {
+    .registration-page .page-title{
+        width:35%;
+        margin:auto;
+    }
+    .registration-page .page-title h1{
+        padding:0 57% 0 2%;
+    }
+}
+

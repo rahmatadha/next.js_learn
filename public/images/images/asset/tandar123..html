@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://bateeq-nop-dev.azurewebsites.net/login -->
+<html lang="en" class="html-login-page html-login-page html-registration-page"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Your store. Register. Login. Login</title>
+    
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="nopCommerce">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./tandar123._files/css2" rel="stylesheet" type="text/css">
+    
+    
+    
+    <link href="./tandar123._files/jquery-ui.min.css" rel="stylesheet" type="text/css">
+<link href="./tandar123._files/account.css" rel="stylesheet" type="text/css">
+<link href="./tandar123._files/address.css" rel="stylesheet" type="text/css">
+<link href="./tandar123._files/tracking.css" rel="stylesheet" type="text/css">
+<link href="./tandar123._files/MenuProfil.css" rel="stylesheet" type="text/css">
+<link href="./tandar123._files/MyMembership.css" rel="stylesheet" type="text/css">
+<link href="./tandar123._files/register.css" rel="stylesheet" type="text/css">
+<link href="./tandar123._files/login.css" rel="stylesheet" type="text/css">
+<link href="./tandar123._files/styles.css" rel="stylesheet" type="text/css">
+
+    
+    
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://bateeq-nop-dev.azurewebsites.net/icons/icons_0/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://bateeq-nop-dev.azurewebsites.net/icons/icons_0/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="https://bateeq-nop-dev.azurewebsites.net/icons/icons_0/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="https://bateeq-nop-dev.azurewebsites.net/icons/icons_0/favicon-16x16.png"><link rel="manifest" href="https://bateeq-nop-dev.azurewebsites.net/icons/icons_0/site.webmanifest"><link rel="mask-icon" href="https://bateeq-nop-dev.azurewebsites.net/icons/icons_0/safari-pinned-tab.svg" color="#5bbad5"><link rel="shortcut icon" href="https://bateeq-nop-dev.azurewebsites.net/icons/icons_0/favicon.ico"><meta name="msapplication-TileColor" content="#2d89ef"><meta name="msapplication-TileImage" content="/icons/icons_0/mstile-144x144.png"><meta name="msapplication-config" content="/icons/icons_0/browserconfig.xml"><meta name="theme-color" content="#ffffff">
+    
+    <!--Powered by nopCommerce - https://www.nopCommerce.com-->
+</head>
+<body>
+    
+
+<div class="ajax-loading-block-window" style="display: none">
+</div>
+<div id="dialog-notifications-success" title="Notification" style="display:none;">
+</div>
+<div id="dialog-notifications-error" title="Error" style="display:none;">
+</div>
+<div id="dialog-notifications-warning" title="Warning" style="display:none;">
+</div>
+<div id="bar-notification" class="bar-notification-container" data-close="Close">
+</div>
+
+
+
+<!--[if lte IE 8]>
+    <div style="clear:both;height:59px;text-align:center;position:relative;">
+        <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank">
+            <img src="/Themes/Bateeq/Content/images/ie_warning.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+    </div>
+<![endif]-->
+<div class="master-wrapper-page">
+    
+    <div class="header">
+    
+    <div class="header-upper ">
+        <div class="header-selectors-wrapper">
+            
+            
+
+    <div class="currency-selector">
+            <select id="customerCurrency" name="customerCurrency" onchange="setLocation(this.value);" aria-label="Currency selector"><option selected="selected" value="https://bateeq-nop-dev.azurewebsites.net/changecurrency/1?returnUrl=%2Flogin">US Dollar</option>
+<option value="https://bateeq-nop-dev.azurewebsites.net/changecurrency/6?returnUrl=%2Flogin">Euro</option>
+</select>
+    </div>
+
+            
+        </div>
+        <div class="header-links-wrapper-center">
+            <div class="header-links-upper">
+                <ul>
+                    <li><span class="ico-free-shipping">FREE SHIPPING FOR INDONESIA ONLY</span></li>
+                    <li><span class="ico-customization">FREE ALTERATION &amp; CUSTOMIZATION</span></li>
+                    <li><span class="ico-customer-service">24/7 CUSTOMER SERVICE</span></li>
+                </ul>
+
+            </div>
+
+        </div>
+        <div class="header-phone-number-right">
+            <div>
+                <span>
+                    +61 821 3739 2222
+                </span>
+            </div>
+        </div>
+    </div>
+    
+<div class="header-lower">
+    <div class="header-language-selector">
+        
+    </div>
+    <div class="header-logo">
+        <a href="https://bateeq-nop-dev.azurewebsites.net/">
+    <img title="" alt="Your store name" src="./tandar123._files/0002065_logo_bateeq.png">
+</a>
+    </div>
+   
+    <div class="header-links-wrapper">
+        <div class="search-box store-search-box">
+            <form method="get" id="small-search-box-form" action="https://bateeq-nop-dev.azurewebsites.net/search">
+    <input type="text" class="search-box-text ui-autocomplete-input" id="small-searchterms" autocomplete="off" name="q" placeholder="Search store" aria-label="Search store">
+    
+    <input type="submit" class="button-1 search-box-button" value=" ">
+        
+            
+    
+</form>
+        <ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul></div>
+        
+<div class="header-links">
+    <ul>
+        
+            <li><a href="https://bateeq-nop-dev.azurewebsites.net/login#" id="ico-register">Register</a></li>
+            <li><a href="https://bateeq-nop-dev.azurewebsites.net/login#" id="ico-login">Log in</a></li>
+                            <li>
+                <a href="https://bateeq-nop-dev.azurewebsites.net/wishlist" class="ico-wishlist">
+                    <span class="wishlist-label">Wishlist</span>
+                    <span class="wishlist-qty">(1)</span>
+                </a>
+            </li>
+                    <li id="topcartlink">
+                <a href="https://bateeq-nop-dev.azurewebsites.net/cart" class="ico-cart">
+                    <span class="cart-label">Shopping cart</span>
+                    <span class="cart-qty">(2)</span>
+                </a>
+            </li>
+        
+    </ul>
+      
+</div>
+
+<div id="login-modal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="modal-close">×</span>
+    </div>
+    <div class="modal-body">
+      
+<div class="page login-page">
+  <div class="page-title">
+    <h1>Welcome, Please Sign In!</h1>
+
+    <span class="register">
+      <a href="https://bateeq-nop-dev.azurewebsites.net/register">Register</a>
+    </span>
+  </div>
+  
+  <div class="page-body">
+    <div class="customer-blocks">
+        <div class="new-wrapper register-block">
+          <div class="title">
+            <strong>New Customer</strong>
+          </div>
+          <div class="text">
+            By creating an account on our website, you will be able to shop faster, be up to date on an orders status, and keep track of the orders you have previously made.
+          </div>
+          <div class="buttons">
+            <input type="button" class="button-1 register-button" onclick="location.href=&#39;https://bateeq-nop-dev.azurewebsites.net/register&#39;" value="Register">
+          </div>
+        </div>
+      <div class="returning-wrapper fieldset">
+        <form method="post" action="https://bateeq-nop-dev.azurewebsites.net/login" novalidate="novalidate">
+          <div class="message-error validation-summary-errors">Login was unsuccessful. Please correct the errors and try again.<ul><li>No customer account found</li>
+</ul></div>
+          <div class="title">
+            <strong>Returning Customer</strong>
+          </div>
+          <div class="form-fields">
+              <div class="inputs">
+                <label for="Email">account.login.fields.phoneoremail</label>
+                <input class="email" autofocus="autofocus" type="email" data-val="true" data-val-email="Wrong email" data-val-required="Please enter your email" id="Email" name="Email" value="admin@bateeq.com">
+                <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+              </div>
+            <div class="inputs no-margin">
+              <label for="Password">Password</label>
+              <input class="password" type="password" id="Password" name="Password">
+              <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+            </div>
+            <span class="forgot-password">
+              <a href="https://bateeq-nop-dev.azurewebsites.net/passwordrecovery">Forgot password?</a>
+            </span>
+            <span class="remember-me">
+              <input type="checkbox" data-val="true" data-val-required="The Remember me? field is required." id="RememberMe" name="RememberMe" value="true">
+              <label for="RememberMe">Remember me?</label>
+            </span>
+          </div>
+          <div class="buttons">
+            <input class="button-1 login-button full-width" type="submit" value="Log in" disabled="">
+          </div>
+        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8BK0DeqtJkFEj9VhsP-bOvKzJekJyQgyvyoys8jGuNM3D14Q1rxePanuuvGADM1IojaKlhaECkGHDcgtxJIXOhyg4JtF45l45nzGNdt0yDJO8vgnMQNUV3hCfudFbS_r4eUmsHZE_PjBsZxm0Cr-mek"><input name="RememberMe" type="hidden" value="false"></form>
+        <h1 class="other-login">account.login.orloginwith</h1>
+        <div class="buttons grid">
+          <input class="button-1 login-button google" type="submit" value="Google">
+          <input class="button-1 login-button twitter" type="submit" value="Twitter">
+          <input class="button-1 login-button facebook" type="submit" value="Facebook">
+        </div>
+        <span class="register">
+          account.login.donthaveanaccount <a href="https://bateeq-nop-dev.azurewebsites.net/register">account.login.registerhere</a>
+        </span>
+      </div>
+    </div>
+    <div class="external-authentication">
+      
+    </div>
+        <div class="topic-block">
+            <div class="topic-block-title">
+                <h2>About login / registration</h2>
+            </div>
+        <div class="topic-block-body">
+            <p>Put your login / registration information here. You can edit this in the admin site.</p>
+        </div>
+    </div>
+
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</div>
+
+<div id="register-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <span id="modal-close">×</span>
+        </div>
+        <div class="modal-body">
+            
+<div class="page registration-page">
+    <div class="page-title-register">
+        <h1>Register</h1>
+        <a>Log In</a>
+    </div>
+    <div class="page-body">
+        <form method="post" action="https://bateeq-nop-dev.azurewebsites.net/register" novalidate="novalidate">
+            <div class="message-error validation-summary-errors"><ul><li>No customer account found</li>
+</ul></div>
+            <div class="fieldset registersetpop">
+                <div class="title">
+                </div>
+                <div class="form-fields">
+                    <div class="inputs">
+                        <label for="FirstName">First name:</label>
+                        <input type="text" data-val="true" data-val-required="First name is required." id="FirstName" name="FirstName" value="">
+                        <span class="required">*</span>
+                        <span class="field-validation-valid" data-valmsg-for="FirstName" data-valmsg-replace="true"></span>
+                    </div>
+                    <div class="inputs">
+                        <label for="LastName">Last name:</label>
+                        <input type="text" data-val="true" data-val-required="Last name is required." id="LastName" name="LastName" value="">
+                        <span class="required">*</span>
+                        <span class="field-validation-valid" data-valmsg-for="LastName" data-valmsg-replace="true"></span>
+                    </div>
+                    <div class="inputs">
+                        <label for="Phone">Phone:</label>
+                        <select class="id-country">
+                            <option>+62</option>
+                        </select>
+                        <input type="tel" id="Phone" name="Phone" value="">
+                        <span class="field-validation-valid" data-valmsg-for="Phone" data-valmsg-replace="true"></span>
+                    </div>
+                    <div class="inputs">
+                        <label for="Email">Email:</label>
+                        <input type="email" data-val="true" data-val-email="Wrong email" data-val-required="Email is required." id="Email" name="Email" value="admin@bateeq.com">
+                        <span class="required">*</span>
+                        <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                    </div>
+                                        <div class="inputs">
+                        <label for="Password">Password:</label>
+                        <input type="password" data-val="true" data-val-regex="&lt;p&gt;must meet the following rules: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;must have at least 6 characters&lt;/li&gt;&lt;/ul&gt;" data-val-regex-pattern="^.{6,}$" data-val-required="Password is required." id="Password" name="Password">
+                        <span class="required">*</span>
+                        <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                    </div>
+                    <div class="inputs">
+                        <label for="ConfirmPassword">Confirm password:</label>
+                        <input type="password" data-val="true" data-val-equalto="The password and confirmation password do not match." data-val-equalto-other="*.Password" data-val-required="Password is required." id="ConfirmPassword" name="ConfirmPassword">
+                        <span class="required">*</span>
+                        <span class="field-validation-valid" data-valmsg-for="ConfirmPassword" data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+                                                                
+
+                <div class="buttons btnregister">
+                    <input type="submit" id="register-button" class="button-3 register-next-step-button" value="Register" name="register-button">
+                    <div class="text-footer"><p>Already have an Account? <a>Log In here</a></p></div>
+                </div>
+                
+        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8BK0DeqtJkFEj9VhsP-bOvKzJekJyQgyvyoys8jGuNM3D14Q1rxePanuuvGADM1IojaKlhaECkGHDcgtxJIXOhyg4JtF45l45nzGNdt0yDJO8vgnMQNUV3hCfudFbS_r4eUmsHZE_PjBsZxm0Cr-mek">
+        <div class="external-authentication">
+            
+        </div>
+    </div></form>
+</div>
+        </div>
+    </div>
+</div>
+
+
+
+
+        <div id="flyout-cart" class="flyout-cart">
+    <div class="mini-shopping-cart">
+        <div class="count">
+There are <a href="https://bateeq-nop-dev.azurewebsites.net/cart">2 item(s)</a> in your cart.        </div>
+            <div class="items">
+                    <div class="item first">
+                            <div class="picture">
+                                <a href="https://bateeq-nop-dev.azurewebsites.net/apple-macbook-pro-13-inch" title="Show details for Apple MacBook Pro 13-inch">
+                                    <img alt="Picture of Apple MacBook Pro 13-inch" src="./tandar123._files/0000024_apple-macbook-pro-13-inch_70.jpeg" title="Show details for Apple MacBook Pro 13-inch">
+                                </a>
+                            </div>
+                        <div class="product">
+                            <div class="name">
+                                <a href="https://bateeq-nop-dev.azurewebsites.net/apple-macbook-pro-13-inch">Apple MacBook Pro 13-inch</a>
+                            </div>
+                            <div class="price">Unit price: <span>$1,800.00</span></div>
+                            <div class="quantity">Quantity: <span>2</span></div>
+                        </div>
+                    </div>
+            </div>
+            <div class="totals">Sub-Total: <strong>$3,600.00</strong></div>
+            <div class="buttons">
+                    <input type="button" value="Go to cart" class="button-1 cart-button" onclick="setLocation(&#39;/cart&#39;)">
+                            </div>
+    </div>
+</div>
+
+    </div>
+</div>
+    
+</div>
+
+    
+    <div class="header-menu">
+        <ul class="top-menu notmobile">
+    
+          <li>
+    <a href="https://bateeq-nop-dev.azurewebsites.net/computers">Computers
+    </a>
+            <div class="sublist-toggle"></div>
+            <ul class="sublist first-level">
+<li>
+    <a href="https://bateeq-nop-dev.azurewebsites.net/desktops">Desktops
+    </a>
+</li><li>
+    <a href="https://bateeq-nop-dev.azurewebsites.net/notebooks">Notebooks
+    </a>
+</li><li>
+    <a href="https://bateeq-nop-dev.azurewebsites.net/software">Software
+    </a>
+</li>            </ul>
+</li><li>
+    <a href="https://bateeq-nop-dev.azurewebsites.net/electronics">Electronics
+    </a>
+            <div class="sublist-toggle"></div>
+            <ul class="sublist first-level">
+<li>
+    <a href="https://bateeq-nop-dev.azurewebsites.net/camera-photo">Camera &amp; photo
+    </a>
+</li><li>
+    <a href="https://bateeq-nop-dev.azurewebsites.net/cell-phones">Cell phones
+    </a>
+</li><li>
+    <a href="https://bateeq-nop-dev.azurewebsites.net/others">Others
+    </a>
+</li>            </ul>
+</li><li>
+    <a href="https://bateeq-nop-dev.azurewebsites.net/apparel">Apparel
+    </a>
+            <div class="sublist-toggle"></div>
+            <ul class="sublist first-level">
+<li>
+    <a href="https://bateeq-nop-dev.azurewebsites.net/shoes">Shoes
+    </a>
+</li><li>
+    <a href="https://bateeq-nop-dev.azurewebsites.net/clothing">Clothing
+    </a>
+</li><li>
+    <a href="https://bateeq-nop-dev.azurewebsites.net/accessories">Accessories
+    </a>
+</li>            </ul>
+</li><li>
+    <a href="https://bateeq-nop-dev.azurewebsites.net/digital-downloads">Digital downloads
+    </a>
+</li><li>
+    <a href="https://bateeq-nop-dev.azurewebsites.net/books">Books
+    </a>
+</li><li>
+    <a href="https://bateeq-nop-dev.azurewebsites.net/jewelry">Jewelry
+    </a>
+</li><li>
+    <a href="https://bateeq-nop-dev.azurewebsites.net/gift-cards">Gift Cards
+    </a>
+</li>  
+                    
+</ul>
+    <div class="menu-toggle">Categories</div>
+    <ul class="top-menu mobile">
+        
+        <li>
+    <a href="https://bateeq-nop-dev.azurewebsites.net/computers">Computers
+    </a>
+            <div class="sublist-toggle"></div>
+            <ul class="sublist first-level">
+<li>
+    <a href="https://bateeq-nop-dev.azurewebsites.net/desktops">Desktops
+    </a>
+</li><li>
+    <a href="https://bateeq-nop-dev.azurewebsites.net/notebooks">Notebooks
+    </a>
+</li><li>
+    <a href="https://bateeq-nop-dev.azurewebsites.net/software">Software
+    </a>
+</li>            </ul>
+</li><li>
+    <a href="https://bateeq-nop-dev.azurewebsites.net/electronics">Electronics
+    </a>
+            <div class="sublist-toggle"></div>
+            <ul class="sublist first-level">
+<li>
+    <a href="https://bateeq-nop-dev.azurewebsites.net/camera-photo">Camera &amp; photo
+    </a>
+</li><li>
+    <a href="https://bateeq-nop-dev.azurewebsites.net/cell-phones">Cell phones
+    </a>
+</li><li>
+    <a href="https://bateeq-nop-dev.azurewebsites.net/others">Others
+    </a>
+</li>            </ul>
+</li><li>
+    <a href="https://bateeq-nop-dev.azurewebsites.net/apparel">Apparel
+    </a>
+            <div class="sublist-toggle"></div>
+            <ul class="sublist first-level">
+<li>
+    <a href="https://bateeq-nop-dev.azurewebsites.net/shoes">Shoes
+    </a>
+</li><li>
+    <a href="https://bateeq-nop-dev.azurewebsites.net/clothing">Clothing
+    </a>
+</li><li>
+    <a href="https://bateeq-nop-dev.azurewebsites.net/accessories">Accessories
+    </a>
+</li>            </ul>
+</li><li>
+    <a href="https://bateeq-nop-dev.azurewebsites.net/digital-downloads">Digital downloads
+    </a>
+</li><li>
+    <a href="https://bateeq-nop-dev.azurewebsites.net/books">Books
+    </a>
+</li><li>
+    <a href="https://bateeq-nop-dev.azurewebsites.net/jewelry">Jewelry
+    </a>
+</li><li>
+    <a href="https://bateeq-nop-dev.azurewebsites.net/gift-cards">Gift Cards
+    </a>
+</li>                                                                
+    </ul>
+        
+
+    </div>
+    <div class="master-wrapper-content">
+        
+
+        <div class="master-column-wrapper">
+            <div class="center-1">
+    
+    
+<div class="page login-page">
+  <div class="page-title">
+    <h1>Welcome, Please Sign In!</h1>
+
+    <span class="register">
+      <a href="https://bateeq-nop-dev.azurewebsites.net/register">Register</a>
+    </span>
+  </div>
+  
+  <div class="page-body">
+    <div class="customer-blocks">
+        <div class="new-wrapper register-block">
+          <div class="title">
+            <strong>New Customer</strong>
+          </div>
+          <div class="text">
+            By creating an account on our website, you will be able to shop faster, be up to date on an orders status, and keep track of the orders you have previously made.
+          </div>
+          <div class="buttons">
+            <input type="button" class="button-1 register-button" onclick="location.href=&#39;https://bateeq-nop-dev.azurewebsites.net/register&#39;" value="Register">
+          </div>
+        </div>
+      <div class="returning-wrapper fieldset">
+        <form method="post" action="https://bateeq-nop-dev.azurewebsites.net/login" novalidate="novalidate">
+          <div class="message-error validation-summary-errors">Login was unsuccessful. Please correct the errors and try again.<ul><li>No customer account found</li>
+</ul></div>
+          <div class="title">
+            <strong>Returning Customer</strong>
+          </div>
+          <div class="form-fields">
+              <div class="inputs">
+                <label for="Email">account.login.fields.phoneoremail</label>
+                <input class="email valid" autofocus="autofocus" type="email" data-val="true" data-val-email="Wrong email" data-val-required="Please enter your email" id="Email" name="Email" value="admin@bateeq.com" aria-describedby="Email-error" aria-invalid="false">
+                <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+              </div>
+            <div class="inputs no-margin">
+              <label for="Password">Password</label>
+              <input class="password" type="password" id="Password" name="Password">
+              <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+            </div>
+            <span class="forgot-password">
+              <a href="https://bateeq-nop-dev.azurewebsites.net/passwordrecovery">Forgot password?</a>
+            </span>
+            <span class="remember-me">
+              <input type="checkbox" data-val="true" data-val-required="The Remember me? field is required." id="RememberMe" name="RememberMe" value="true">
+              <label for="RememberMe">Remember me?</label>
+            </span>
+          </div>
+          <div class="buttons">
+            <input class="button-1 login-button full-width" type="submit" value="Log in">
+          </div>
+        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8BK0DeqtJkFEj9VhsP-bOvKzJekJyQgyvyoys8jGuNM3D14Q1rxePanuuvGADM1IojaKlhaECkGHDcgtxJIXOhyg4JtF45l45nzGNdt0yDJO8vgnMQNUV3hCfudFbS_r4eUmsHZE_PjBsZxm0Cr-mek"><input name="RememberMe" type="hidden" value="false"></form>
+        <h1 class="other-login">account.login.orloginwith</h1>
+        <div class="buttons grid">
+          <input class="button-1 login-button google" type="submit" value="Google">
+          <input class="button-1 login-button twitter" type="submit" value="Twitter">
+          <input class="button-1 login-button facebook" type="submit" value="Facebook">
+        </div>
+        <span class="register">
+          account.login.donthaveanaccount <a href="https://bateeq-nop-dev.azurewebsites.net/register">account.login.registerhere</a>
+        </span>
+      </div>
+    </div>
+    <div class="external-authentication">
+      
+    </div>
+        <div class="topic-block">
+            <div class="topic-block-title">
+                <h2>About login / registration</h2>
+            </div>
+        <div class="topic-block-body">
+            <p>Put your login / registration information here. You can edit this in the admin site.</p>
+        </div>
+    </div>
+
+  </div>
+</div>
+    
+</div>
+
+        </div>
+        
+    </div>
+    <div class="footer">
+    <div class="footer-upper">
+        <div class="footer-block company">
+            <div class="title">
+                <strong>COMPANY</strong>
+            </div>
+            <ul class="list">
+                <li><a href="http://www.bateeq.com/our-story/">About The Brand</a></li>
+                <li><a href="http://www.bateeq.com/news/">Corporate Social Responsibility</a></li>
+                <li><a href="https://bateeq-nop-dev.azurewebsites.net/login#">A Sustainable Journey</a></li>
+
+            </ul>
+        </div>
+        <div class="footer-block customer-care">
+            <div class="title">
+                <strong>Customer Care</strong>
+            </div>
+            <ul class="list">
+                    <li><a href="https://bateeq-nop-dev.azurewebsites.net/contactus">Contact us</a></li>
+                                <li><a href="http://www.bateeq.com/bateeq-store-locations/">Find Our Store</a></li>
+                
+                                                
+            </ul>
+        </div>
+        <div class="footer-block membership">
+            <div class="title">
+                <strong>Membership</strong>
+            </div>
+            <div class="membership-card">
+                <img alt="Membership Card Images" src="./tandar123._files/card.png">
+                <div class="buttons">
+                    <input type="button" value="Learn More" class="button-1">
+                </div>
+
+            </div>
+
+            <ul class="list">
+                                                                                                            </ul>
+        </div>
+        <div class="footer-block follow-us">
+            <div class="social">
+                <div class="title">
+                    <strong>Follow us</strong>
+                </div>
+                <ul class="networks">
+		<li class="facebook"><a href="http://www.facebook.com/nopCommerce" target="_blank">Facebook</a></li>
+			<li class="instagram"><a href="https://twitter.com/nopCommerce" target="_blank">Twitter</a></li>
+</ul>
+            </div>
+            <div class="download-app">
+    <div class="title">
+        <strong>Download The App</strong>
+    </div>
+
+        <ul class="download-app-wrap">
+            <li class="app-store"><a href="https://bateeq-nop-dev.azurewebsites.net/downloadappstore"></a></li>
+            <li class="play-store"><a href="https://bateeq-nop-dev.azurewebsites.net/downloadplaystore"></a></li>
+        </ul>
+
+    
+</div>
+        </div>
+    </div>
+    <div class="footer-lower">
+        <div class="footer-info">
+            <span class="footer-disclaimer">Copyright © 2020 Your store name. All rights reserved.</span>
+        </div>
+            <div class="footer-powered-by">
+                Powered by <a href="https://www.nopcommerce.com/">nopCommerce</a>
+            </div>
+        
+    </div>
+    
+</div>
+
+
+</div>
+
+
+
+    
+    <script src="./tandar123._files/jquery-3.3.1.min.js.download"></script>
+<script src="./tandar123._files/jquery.validate.min.js.download"></script>
+<script src="./tandar123._files/jquery.validate.unobtrusive.min.js.download"></script>
+<script src="./tandar123._files/jquery-ui.min.js.download"></script>
+<script src="./tandar123._files/jquery-migrate-3.0.1.min.js.download"></script>
+<script src="./tandar123._files/public.common.js.download"></script>
+<script src="./tandar123._files/public.ajaxcart.js.download"></script>
+<script src="./tandar123._files/public.countryselect.js.download"></script>
+
+    <script>
+            $("#small-search-box-form").on("submit", function(event) {
+                if ($("#small-searchterms").val() == "") {
+                    alert('Please enter some search keyword');
+                    $("#small-searchterms").focus();
+                    event.preventDefault();
+                }
+            });
+        </script>
+<script>
+            $(document).ready(function() {
+                var showLinkToResultSearch;
+                var searchText;
+                $('#small-searchterms').autocomplete({
+                        delay: 500,
+                        minLength: 3,
+                        source: '/catalog/searchtermautocomplete',
+                        appendTo: '.search-box',
+                        select: function(event, ui) {
+                            $("#small-searchterms").val(ui.item.label);
+                            setLocation(ui.item.producturl);
+                            return false;
+                    },
+                    //append link to the end of list
+                    open: function(event, ui) {
+                        //display link to search page
+                        if (showLinkToResultSearch) {
+                            searchText = document.getElementById("small-searchterms").value;
+                            $(".ui-autocomplete").append("<li class=\"ui-menu-item\" role=\"presentation\"><a href=\"/search?q=" + searchText + "\">View all results...</a></li>");
+                        }
+                    }
+                })
+                .data("ui-autocomplete")._renderItem = function(ul, item) {
+                    var t = item.label;
+                    showLinkToResultSearch = item.showlinktoresultsearch;
+                    //html encode
+                    t = htmlEncode(t);
+                    return $("<li></li>")
+                        .data("item.autocomplete", item)
+                        .append("<a><span>" + t + "</span></a>")
+                        .appendTo(ul);
+                };
+            });
+        </script>
+<script>
+      $(document).ready(function () {
+        $('.header').on('mouseenter', '#topcartlink', function () {
+          $('#flyout-cart').addClass('active');
+        });
+        $('.header').on('mouseleave', '#topcartlink', function () {
+          $('#flyout-cart').removeClass('active');
+        });
+        $('.header').on('mouseenter', '#flyout-cart', function () {
+          $('#flyout-cart').addClass('active');
+        });
+        $('.header').on('mouseleave', '#flyout-cart', function () {
+          $('#flyout-cart').removeClass('active');
+        });
+      });
+    </script>
+<script>
+  const emailInput = document.querySelector(".email");
+  const passwordInput = document.querySelector(".password");
+  const loginButton = document.querySelector(".login-button.full-width");
+
+  // Login button is disabled by default
+  loginButton.disabled = true;
+
+  // Event bubbling to window
+  window.addEventListener('keyup', () => {
+    // Delegate keyup event to target element
+    if (event.target === emailInput || event.target === passwordInput) {
+      // Check if both elements value are empty
+      if (emailInput.value.length !== 0 && passwordInput.value.length !== 0) {
+        loginButton.disabled = false;
+      } else {
+        loginButton.disabled = true;
+      }
+    }
+  })
+</script>
+<script>
+  const button = document.querySelector("#ico-login");
+  const modal = document.querySelector("#login-modal");
+  const close = document.querySelector(".modal-close");
+
+  window.addEventListener("click", event => {
+    if (event.target === button) {
+      modal.style.display = "flex";
+      modal.style.justifyContent = "center";
+      modal.style.alignItems = "center";
+    } else if (event.target === close) {
+      modal.style.display = "none";
+    } else {
+      return;
+    }
+  })
+</script>
+<script>
+    const buttonregister = document.querySelector("#ico-register");
+    const modalregister = document.querySelector("#register-modal");
+    const closeregister = document.querySelector("#modal-close");
+
+    window.addEventListener("click", event => {
+        if (event.target === buttonregister) {
+            modalregister.style.display = "flex";
+            modalregister.style.justifyContent = "center";
+            modalregister.style.alignItems = "center";
+        } else if (event.target === closeregister) {
+            modalregister.style.display = "none";
+        } else {
+            return;
+        }
+        console.log(event.target)
+    })
+</script>
+<script>
+        AjaxCart.init(false, '.header-links .cart-qty', '.header-links .wishlist-qty', '#flyout-cart');
+    </script>
+<script>
+            $(document).ready(function () {
+                $('.menu-toggle').on('click', function () {
+                    $(this).siblings('.top-menu.mobile').slideToggle('slow');
+                });
+                $('.top-menu.mobile .sublist-toggle').on('click', function () {
+                    $(this).siblings('.sublist').slideToggle('slow');
+                });
+            });
+        </script>
+<script>
+        function newsletter_subscribe(subscribe) {
+            var subscribeProgress = $("#subscribe-loading-progress");
+            subscribeProgress.show();
+            var postData = {
+                subscribe: subscribe,
+                email: $("#newsletter-email").val()
+            };
+            $.ajax({
+                cache: false,
+                type: "POST",
+                url: "/subscribenewsletter",
+                data: postData,
+                success: function (data, textStatus, jqXHR) {
+                    $("#newsletter-result-block").html(data.Result);
+                    if (data.Success) {
+                        $('#newsletter-subscribe-block').hide();
+                        $('#newsletter-result-block').show();
+                    } else {
+                        $('#newsletter-result-block').fadeIn("slow").delay(2000).fadeOut("slow");
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    alert('Failed to subscribe.');
+                },
+                complete: function (jqXHR, textStatus) {
+                    subscribeProgress.hide();
+                }
+            });
+        }
+
+        $(document).ready(function () {
+            $('#newsletter-subscribe-button').on('click', function () {
+newsletter_subscribe('true');            });
+            $("#newsletter-email").on("keydown", function (event) {
+                if (event.keyCode == 13) {
+                    $("#newsletter-subscribe-button").trigger("click");
+                    return false;
+                }
+            });
+        });
+    </script>
+<script>
+    $(document).ready(function () {
+        $('.footer-block .title').on('click', function () {
+            var e = window, a = 'inner';
+            if (!('innerWidth' in window)) {
+                a = 'client';
+                e = document.documentElement || document.body;
+            }
+            var result = { width: e[a + 'Width'], height: e[a + 'Height'] };
+            if (result.width < 769) {
+                $(this).siblings('.list').slideToggle('slow');
+            }
+        });
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $('.block .title').on('click', function () {
+            var e = window, a = 'inner';
+            if (!('innerWidth' in window)) {
+                a = 'client';
+                e = document.documentElement || document.body;
+            }
+            var result = { width: e[a + 'Width'], height: e[a + 'Height'] };
+            if (result.width < 1001) {
+                $(this).siblings('.listbox').slideToggle('slow');
+            }
+        });
+    });
+</script>
+
+
+</div><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div></body></html>

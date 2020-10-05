@@ -1,0 +1,25 @@
+.titleSearch{
+    display: flow-root;
+    margin: 42px 8% 20px;
+}
+.gridImg{
+    display: flex;
+}
+.product{
+    margin: 10px;
+}
+.w50left{
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+.w50right{
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+.wrepperpagination{
+    margin: 138px 0;
+    display: flow-root;
+}

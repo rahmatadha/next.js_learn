@@ -24,3 +24,48 @@ img {
   max-width: 100%;
   display: block;
 }
+
+/******phone register********/
+.gridInput{
+  margin: 0 0 40px 0;
+}
+.gridInput input{
+  margin: 0 10px;
+  width: 3%;
+  border-bottom: 1px solid #000000;
+  border-top: unset;
+  border-right: unset;
+  border-left: unset;
+}
+.btnphoneregis button{
+  background-color: #000000;
+  color: #ffffff;
+  height: 30px;
+  border: 1px solid #000000;
+  border-radius: 2px;
+  width: 25%;
+}
+
+.btnphoneregis button:hover{
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/*******search********/
+.pagination {
+  width: 58%;
+  float: right;
+}
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 5px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  /* background-color: dodgerblue; */
+  /* color: white; */
+  border-bottom: 1px solid #000000;
+}
