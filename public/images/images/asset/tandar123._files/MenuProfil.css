@@ -1,0 +1,33 @@
+﻿.titleOne {
+    font-size: 30px;
+    padding: 0 0 49px 0;
+}
+
+.listOne li {
+    width: 45%;
+    float: left;
+    height: 200px;
+    border: 1px solid #000;
+    margin: 10px 20px;
+}
+
+.listOne li img {
+    float: left;
+    padding: 50px 10% 0 10%;
+}
+
+.listOne li .grid-menu {
+    padding: 35px 10% 0 0;
+    display: grid;
+}
+
+.listOne li .grid-menu p, a {
+    margin: 5px 0;
+}
+.blockOne .listboxOne {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 5px;
+}
+.block-account-navigationOne.listboxOne ul .listOne li {
+    width: 50%;
+}

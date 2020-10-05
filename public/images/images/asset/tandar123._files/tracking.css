@@ -1,0 +1,95 @@
+﻿.modal-content-tracking {
+    position: relative;
+    background-color: #fff;
+    margin: auto;
+    padding: 0;
+    border: .3px solid #777;
+    border-radius: 5px;
+    max-width: 693px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+.modal-tracking {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-body .wrepper-tracking{
+    padding:10px 30px;
+}
+.modal-body .wrepper-tracking .wrepper-invoice{
+    padding: 0 0 10px 0;
+}
+.modal-body .wrepper-tracking .wrepper-trackingorder{
+    padding: 30px 0 60px 0;
+}
+.modal-body .wrepper-tracking .wrepper-trackingorder a::before{
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 15px;
+    width: 5px;
+    height: 5px;
+    background-color: #ddd;
+}
+.modal-body .wrepper-tracking .wrepper-invoice label,
+.modal-body .wrepper-tracking .wrepper-trackingorder label{
+    font-weight:800;
+}
+.space{
+    padding: 0 0 20px 0;
+}
+
+
+
+.modal-body .wrepper-tracking .rekapinfo{
+    display:flex;
+}
+.modal-body .wrepper-tracking .rekapinfo .status{
+    margin: 0 20px;
+    width:35%;
+    border-right:2px solid #777;
+}
+.modal-body .wrepper-tracking .rekapinfo .noorder{
+    width:40%;
+    border-right:2px solid #777;
+}
+.modal-body .wrepper-tracking .shippingmethod input{
+    float:right;
+    width:180px;
+    height:30px;
+}
+.modal-body .wrepper-tracking .tracking-detail input{
+    width:120px;
+    height:36px;
+}
+.modal-body .wrepper-tracking .rekapinfo .status label,
+.modal-body .wrepper-tracking .rekapinfo .noorder label,
+.modal-body .wrepper-tracking .rekapinfo .totalpayment label,
+.modal-body .wrepper-tracking .shippingmethod label,
+.modal-body .wrepper-tracking .shippinginfo label{
+    font-weight:800;
+}
+#modalorderdetail-close {
+    color: #000;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#modal-close-tracking {
+    color: #000;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
