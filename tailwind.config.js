@@ -49,11 +49,17 @@ module.exports = {
         '5xl': '3rem',
         '6xl': '4rem',
         '7xl': '5rem',
+        '30' : '30px',
     },
     extend: {
       colors: {
           'bateeq-topheader':'#f5f5f5',
           'footer-help':'#A6A5A4',
+      }
+    },
+    extend: {
+      width: {
+          '87%': '87%'
       }
     },
   },

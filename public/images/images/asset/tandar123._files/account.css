@@ -1,0 +1,34 @@
+﻿
+/*********** FONT FAMILY **********/
+
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.ttf') format('truetype');
+    font-display: swap;
+}
+
+.change-password-page .page-body .fieldset .form-fields {
+    padding: 70px 70px;
+}
+
+.change-password-page .page-body .fieldset .form-fields .inputs label {
+    display: flex;
+    padding-bottom: 8px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+    .change-password-page .page-body .fieldset .form-fields .title {
+        padding: 0;
+        padding-bottom: 18px;
+    }
+
+.change-password-page .page-body .fieldset .form-fields .title strong{
+    font-size:25px;
+    font-weight:800;
+}
+
+.change-password-page .page-body .buttons .button-1{
+    background-color:black;
+}

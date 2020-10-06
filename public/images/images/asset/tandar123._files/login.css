@@ -1,0 +1,319 @@
+
+
+/*********** FONT FAMILY **********/
+
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+
+/*********** LOGIN **********/
+
+.html-login-page * {
+  font-family: 'Lato', sans-serif;
+}
+
+.html-login-page .center-1 {
+  display: flex;
+  justify-content: center;
+}
+
+.login-page {
+  max-width: 500px;
+  border-radius: 2px;
+  padding: 0 75px;
+}
+
+@media all and (max-width: 769px) {
+  .login-page {
+    padding: 15px;
+  }
+}
+
+.login-page .page-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: none;
+  padding: 0;
+}
+
+.login-page .page-title h1 {
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.login-page .page-title .register a,
+.login-page .customer-blocks .returning-wrapper .register a {
+  font-size: 13.5px;
+  color: #777777;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #777777;
+}
+
+.login-page .page-title::after {
+  content: none;
+}
+
+.login-page .customer-blocks {
+  margin: 0 !important;
+}
+
+.login-page .customer-blocks .new-wrapper {
+  display: none;
+}
+
+.login-page .customer-blocks .returning-wrapper {
+  width: 100%;
+  float: none;
+}
+
+.login-page .customer-blocks .returning-wrapper .title {
+  display: none;
+}
+
+.login-page .customer-blocks .returning-wrapper .form-fields {
+  padding: 0;
+  background: transparent;
+  border-top: 0;
+  min-height: unset;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.login-page .customer-blocks .returning-wrapper .form-fields .inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-page .customer-blocks .returning-wrapper .form-fields .inputs.no-margin {
+  margin: 0;
+}
+
+.login-page .customer-blocks .returning-wrapper .form-fields .inputs label {
+  font-size: 13.5px;
+  color: #000;
+  text-align: left;
+  margin: 0 0 5px 0;
+}
+
+.login-page .customer-blocks .returning-wrapper .form-fields .inputs input {
+  height: 30px;
+  min-height: 30px;
+  width: 100%;
+  border: .3px solid #000;
+  border-radius: 2px;
+}
+
+.login-page .customer-blocks .returning-wrapper .form-fields .forgot-password {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 5px;
+}
+
+.login-page .customer-blocks .returning-wrapper .form-fields .inputs span {
+  text-align: left;
+}
+
+.login-page .customer-blocks .returning-wrapper .form-fields .forgot-password a {
+  font-size: 13.5px;
+  color: #777777;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #777777;
+}
+
+.login-page .customer-blocks .returning-wrapper .form-fields .remember-me input {
+  margin-right: 5px;
+}
+
+.login-page .customer-blocks .returning-wrapper .form-fields .remember-me label {
+  color: #000;
+}
+
+.login-page .customer-blocks .returning-wrapper .buttons {
+  padding: 0;
+  margin: 0;
+}
+
+.login-page .customer-blocks .returning-wrapper .buttons.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'google google' 'twitter facebook';
+  grid-gap: 10px;
+  margin-bottom: 30px;
+}
+
+.login-page .customer-blocks .returning-wrapper .buttons.flex .login-button {
+  flex: 1;
+}
+
+.login-page .customer-blocks .returning-wrapper .buttons .login-button {
+  border: none;
+  font-size: 13.5px;
+  font-weight: bold;
+  height: 30px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 2px;
+  line-height: 0;
+  text-transform: uppercase;
+}
+
+.login-page .customer-blocks .returning-wrapper .buttons .login-button.full-width {
+  width: 100%;
+}
+
+.login-page .customer-blocks .returning-wrapper .buttons .login-button.full-width:disabled {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.login-page .customer-blocks .returning-wrapper .buttons .login-button.google {
+  grid-area: google;
+  background-color: #B3191D;
+}
+
+.login-page .customer-blocks .returning-wrapper .buttons .login-button.twitter {
+  grid-area: twitter;
+  background-color: #45B9EA;
+}
+
+.login-page .customer-blocks .returning-wrapper .buttons .login-button.facebook {
+  grid-area: facebook;
+  background-color: #314E9E;
+}
+
+.login-page .customer-blocks .returning-wrapper .other-login {
+  overflow: hidden;
+  text-align: center;
+  font-size: 13.5px;
+  font-weight: normal;
+  color: #000;
+  margin: 30px 0;
+}
+
+.login-page .customer-blocks .returning-wrapper .other-login:before,
+.login-page .customer-blocks .returning-wrapper .other-login:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: .3px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.login-page .customer-blocks .returning-wrapper .other-login:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.login-page .customer-blocks .returning-wrapper .other-login:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.login-page .customer-blocks .returning-wrapper .register {
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.login-page .customer-blocks .returning-wrapper .register a {
+  color: #777;
+  margin-left: 5px;
+}
+
+.login-page .external-authentication {
+  margin: 0;
+}
+
+.login-page .topic-block {
+  display: none;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  margin: auto;
+  padding: 0;
+  border: .3px solid #777;
+  border-radius: 5px;
+  max-width: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+@media all and (max-width: 769px) {
+  .modal-content {
+    width: 95%;
+  }
+}
+
+@media all and (min-width: 770px) {
+  .modal-content {
+    max-height: 95%;
+  }
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0
+  }
+
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0
+  }
+
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
+
+.modal-close {
+  color: #000;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px 13px;
+}

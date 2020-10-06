@@ -1,0 +1,303 @@
+﻿/****PopUp Level****/
+.title-popup{
+    padding: 0 0 30px 0;
+}
+.modal-body .benner-silver{
+    background: url(../images/asset/sliverMember.png) no-repeat center;
+    background-size: cover;
+    height:100px;
+}
+.modal-body .benner-gold {
+    background: url(../images/asset/goldMember.png) no-repeat center;
+    background-size: cover;
+    height: 100px;
+}
+.modal-body .benner-platinum {
+    background: url(../images/asset/platinumMember.png) no-repeat center;
+    background-size: cover;
+    height:100px;
+}
+
+.modal-body .benner-silver .jenismember,
+.modal-body .benner-gold .jenismember,
+.modal-body .benner-platinum .jenismember{
+    float:left;
+    padding: 20px 0;
+}
+.modal-body .benner-silver img,
+.modal-body .benner-gold img,
+.modal-body .benner-platinum img{
+    float:left;
+    padding:10px 30px 0 20px;
+}
+.modal-body .wrepper-level{
+    padding: 10px 30px;
+}
+.modal-mymember {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content-mymember {
+    position: relative;
+    background-color: #fff;
+    margin: auto;
+    padding: 0;
+    border: .3px solid #777;
+    border-radius: 5px;
+    max-width: 693px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+#modal-close {
+    color: #000;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 13px;
+}
+.modal-body .wrepper-level .silver label,
+.modal-body .wrepper-level .gold label,
+.modal-body .wrepper-level .platinum label {
+    font-weight: 800;
+    padding: 20px 0 0 0;
+}
+.modal-body .wrepper-level .silver .desc,
+.modal-body .wrepper-level .gold .desc,
+.modal-body .wrepper-level .platinum .desc {
+    padding: 20px 0;
+}
+.modal-body .silver,
+.modal-body .gold,
+.modal-body .platinum{
+    display:grid;
+    
+}
+.modal-body .platinum .benner-platinum h1,
+.modal-body .platinum .benner-platinum p {
+    color: #fff;
+}
+.current-balance {
+    height: 177px;
+    background: url(../images/asset/sliverMember.png) no-repeat center;
+    background-size: cover;
+}
+
+.current-balance .frame-button-points .button-points{
+    padding: 15px 10px;
+    background-color:#fff;
+    color:#000;
+    border: 1px solid #000;
+}
+.current-balance .frame-button-points{
+    float:right;
+    padding:45px 3% 0 0;
+}
+.current-balance .frame-button-points img{
+    vertical-align:sub;
+}
+.current-balance .grid-reward .level{
+    float:left;
+    padding: 30px 2% 0 3%;
+}
+.title-membership{
+    font-size:20px;
+    font-weight:bold;
+    border-bottom:#fff;
+}
+
+/***EXCHANGE POINTS***/
+
+.reward-points-history,
+.exchange-points,
+.redeemed-points,
+.myreward-points {
+    display: grid;
+}
+
+.grid-exchange-points {
+    /*display: flex;*/
+}
+
+    .grid-exchange-points .item-exchange-points {
+        border: 1px solid #000;
+        margin: 10px;
+        width: 30%;
+        float: left;
+    }
+
+        .grid-exchange-points .item-exchange-points .item-voucher {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 10px;
+        }
+
+        .grid-exchange-points .item-exchange-points p, h3, .tagA {
+            text-align: center;
+            margin: 5px 0;
+        }
+
+        .grid-exchange-points .item-exchange-points .tagA {
+            margin: 5px 0;
+        }
+
+        .grid-exchange-points .item-exchange-points .item-redeem {
+            padding: 5px;
+        }
+
+            .grid-exchange-points .item-exchange-points .item-redeem a:hover {
+                color: deepskyblue;
+            }
+
+        .grid-exchange-points .item-exchange-points p {
+            font-size: 13.5px;
+        }
+
+        .grid-exchange-points .item-exchange-points h3 {
+            font-size: 25px;
+            color: #fff;
+        }
+
+.current-balance .grid-reward .info-level {
+    float: left;
+    padding: 50px 0 0;
+}
+
+.current-balance .text {
+    float: left;
+    padding: 24px 0 0 0;
+}
+
+.reward-points-overview {
+    margin: 0 0 25px;
+}
+
+.reward-points-history table td {
+    color: #444;
+}
+
+td.points {
+    text-align: right;
+    font-size: 13.5px;
+}
+
+th.points {
+    text-align: right;
+    font-weight: bold;
+    font-size: 13.5px;
+}
+
+th.date {
+    text-align: left;
+    font-weight: bold;
+    font-size: 13.5px;
+}
+
+td.date {
+    text-align: left;
+}
+
+.item-points {
+    font-weight: bold;
+}
+.current-balance .grid-reward .level{
+    float:left;
+    padding: 30px 2% 0 3%;
+}
+
+@media all and (max-width:481px){
+
+    /***MYMEMBERSHIP***/
+
+
+    .current-balance {
+        height: 365px;
+    }
+
+    .current-balance .frame-button-points {
+        float: right;
+        padding: 45px 3% 0 3%;
+    }
+    .current-balance{
+    height:365px;
+}
+
+.current-balance .frame-button-points{
+    float:right;
+    padding:45px 3% 0 3%;
+}
+
+
+.grid-exchange-points .item-exchange-points{
+    width:43%;
+}
+.grid-exchange-points .item-exchange-points p,
+.grid-exchange-points .item-exchange-points a{
+    font-size:11.5px;
+}
+.grid-exchange-points .item-exchange-points h3{
+    font-size:23px;
+}
+}
+
+@media all and (min-width: 769px){
+
+    /***MYMEMBERSHIP***/
+
+
+    .current-balance {
+        height: 177px;
+        background: url(../images/asset/sliverMember.png) no-repeat center;
+        background-size: cover;
+    }
+}
+
+@media all and (min-width: 1001px){
+
+    .current-balance {
+        height: 177px;
+        background: url(../images/asset/sliverMember.png) no-repeat center;
+        background-size: cover;
+    }
+}

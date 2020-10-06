@@ -1,0 +1,109 @@
+﻿
+/*********** FONT FAMILY **********/
+
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.ttf') format('truetype');
+    font-display: swap;
+}
+
+/*.wrapper-address {
+    background: #45B9EA;
+}*/
+
+/*********** ADDRESS **********/
+.address-edit-page .inputs label {
+    display: flex;
+    padding-bottom: 8px;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+/*.address-edit-page .edit-address .wrapper-address {
+    width: 80%;
+    margin: auto;
+}*/
+.address-edit-page .page-title .address-title{
+    float:left;
+}
+
+.address-edit-page .page-title .buttons{
+    float:right;
+}
+
+.address-edit-page .page-title .buttons .button-1{
+    background-color:black;
+}
+
+.address-list-page .page-title .buttons .button-1{
+    background-color:black;
+}
+
+.address-edit-page .edit-address .address .wrapper-address {
+    /*background: #45B9EA;
+    display: inline-block;
+    width: 49%;*/
+    float: left;
+    width: 50%;
+}
+
+.address-edit-page .edit-address .new-address .inputs {
+    position: relative;
+    margin: 0 0 15px;
+    white-space: nowrap;
+    font-size: 0;
+}
+
+.address-edit-page .edit-address .new-address .inputs textarea{
+    width:100%;
+}
+
+.address-edit-page .edit-address .address::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.address-edit-page .edit-address {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+
+/*.address-edit-page .edit-address .wrapper-address .inputs {
+    display: flex;
+    flex-direction: column;
+}*/
+
+
+
+.address-edit-page .edit-address.wrapper-address .inputs label {
+    display: flex;
+            font-size: 13.5px;
+            color: #000;
+            text-align: left;
+            margin: 0 0 5px 0;
+        }
+
+        /*.address-edit-page .edit-address .wrapper-address .inputs input {
+            height: 30px;
+            min-height: 30px;
+            width: 100%;
+            border: .3px solid #000;
+            border-radius: 2px;
+        }*/
+
+.address-list-page .page-body .address-list .address-item .info .address-detail .title strong{
+    font-weight:bold;
+}
+.address-list-page .page-body .address-list .address-item .info .address-detail .title-2 {
+    margin: 0 0 15px;
+    padding: 0 10px;
+    font-size: 18px;
+    color: #444;
+}
+
+    .address-list-page .page-body .address-list .address-item .info .address-detail .title-2 h4 {
+        font-weight: normal;
+        color: #777777;
+    }

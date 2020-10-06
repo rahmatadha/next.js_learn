@@ -2,8 +2,9 @@
 
 export default function Footer(){
     return(
+
         <footer className="bg-black block">
-          <div className="flex grid grid-cols-3  bg-footer-help">
+          <div className="flex grid grid-cols-3 bg-footer-help">
             <div className="col-span-1 text-center py-6">  
             <div className="flex flex-col text-center mb-3">           
               <svg width="full" height="30" viewBox="0 0 42 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -42,6 +43,7 @@ export default function Footer(){
               <ul className="mb-4">
                 <li className="mt-2">
                   <a href="#" className="hover:underline text-white ">About The Brand</a>
+ 
                 </li>
                 <li className="mt-2">
                   <a href="#" className="hover:underline text-white ">Brand Corporate Social Responsibility</a>
