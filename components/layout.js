@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Header from '../components/header'
 import Footer from '../components/footer'
 
+
 const name = 'Anggara Diebrata'
 export const siteTitle = 'BateeqShop'
 
@@ -30,9 +31,7 @@ export default function Layout({ children}) {
       <Header />
     <div className="container mx-auto">
      
-      <div className="flex items-center flex-col">
         <main>{children}</main>
-      </div>
       
     </div>
     <Footer />
