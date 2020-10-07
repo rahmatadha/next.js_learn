@@ -37,7 +37,7 @@ export default function Footer(){
           </div>
 
         <div className="container mx-auto px-6 py-20">
-          <div className="flex flex-wrap pl-32 phone:pl-0">
+          <div className="flex flex-wrap pl-24 phone:pl-0">
             <div className="w-full md:w-1/4 text-center md:text-left">
               <h5 className="uppercase mb-6 font-bold text-white uppercase">Company</h5>
               <ul className="mb-4">

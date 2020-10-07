@@ -1,7 +1,4 @@
 import Head from 'next/head'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
 import Header from '../components/header'
 import Footer from '../components/footer'
 
@@ -29,7 +26,7 @@ export default function Layout({ children}) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Header />
-    <div className="container mx-auto">
+    <div className="lg:container mx-auto phone:w-full tablet:w-full">
      
         <main>{children}</main>
       
