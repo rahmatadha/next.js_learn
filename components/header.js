@@ -147,9 +147,7 @@ export default  function Header(){
                     </svg>
                     </a>
             </div>
-            <div className="mt-4 inline-block lg:mt-0 text-black hover:underline font-normal uppercase text-base">
-                    <a href="#responsive-header" className="text-black">
-=======
+          
 
             <div className="block mt-4 lg:inline-block lg:mt-0 text-black hover:underline font-normal uppercase text-base">
                     <PopupLogin visible={visible} handleCancel={handleCancel} handleOk={handleOk} />
@@ -158,7 +156,7 @@ export default  function Header(){
                         Register
                     </Button>
                     <Button onClick={showModal}>
->>>>>>> master
+
                     Login
                     </Button>
 
