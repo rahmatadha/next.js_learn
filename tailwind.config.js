@@ -15,32 +15,17 @@ module.exports = {
       'lg': '1024px',
       // => @media (min-width: 1024px) { ... }
 
-      'xl': '1280px',
-      // => @media (min-width: 1280px) { ... }
+      'xl': '1240px',
+      // => @media (min-width: 1240px) { ... }
       'phone': {'min': '320px', 'max': '767px'},
-      'tablet':{'min': '768px', 'max':'1023px'}
+      'tablet':{'min': '768px', 'max':'1023px'},
     },
-    height:{
-      '500px':'500px'
-    },
-    maxWidth: {
-             'fhd': '1920px',
-             '1/2': '50%',
-             '3/4': '75%',
-             '500px': '500px',
-             '900px':'900px'
-    },
-    maxHeight: {
-     
-      '400px': '400px',
-      
-},
-    minWidth:{
-            '90px':'90px'
-    },
+    
     fontSize:{
       xs: ['10px', '12px'],
       base: ['13.5px', '16.2px'],
+      title:['30px', '36px'],
+      '11px':'11px',
         'lg': '18px',
         'xl': '1.25rem',
         '2xl': '1.5rem',
@@ -52,17 +37,47 @@ module.exports = {
         '30' : '30px',
     },
     extend: {
+      boxShadow:{
+        orderTotals:'0px 0px 8px 4px rgba(0, 0, 0, 0.09)'
+      },
+      maxHeight: {
+     
+        '400px': '400px',
+        '150px': '150px',
+        
+  },
+      minWidth:{
+              '90px':'90px'
+
+      },
       colors: {
           'bateeq-topheader':'#f5f5f5',
           'footer-help':'#A6A5A4',
-      }
-    },
-    extend: {
+          'table':'#777777',
+      },
       width: {
-          '87%': '87%'
-      }
+        '87%': '87%',
+        '30px':'30px'
     },
+    height:{
+      '500px':'500px',
+      '30px':'30px'
+    },
+    padding:{
+      iframe:'56.25%',
+      '36%':'36%',
+      '100px':'100px'
+    },
+    maxWidth: {
+      'fhd': '1920px',
+      '150px': '150px',
+      '3/4': '75%',
+      '500px': '500px',
+      '900px':'900px'
+    },
+    },
+       
   },
   variants: {},
   plugins: [],
-}
+};

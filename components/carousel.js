@@ -3,27 +3,11 @@ import Slider from "react-slick";
 
 
 
-export default function Carousel({Children}) {
-    const products =[
-        {
-           img: '../images/homepage/arrival1.png' 
-        },
-        {
-            img: '../images/homepage/arrival2.png' 
-         },
-         {
-            img: '../images/homepage/arrival3.png' 
-         },
-         {
-            img: '../images/homepage/arrival2.png' 
-         },
-         {
-            img: '../images/homepage/arrival1.png' 
-         },
-    ]
+export default function Carousel({children}) {
+  
   
     var settings = {
-      dots: true,
+
       infinite: false,
       speed: 500,
       slidesToShow: 4,
@@ -38,7 +22,7 @@ export default function Carousel({Children}) {
             slidesToShow: 3,
             slidesToScroll: 3,
             infinite: true,
-            dots: true
+
           }
         },
         {
@@ -60,13 +44,8 @@ export default function Carousel({Children}) {
     };
     return (
       <div className="w-full px-8 pb-24">
-        <h2 className="text-3xl text-semibold"> Responsive </h2>
         <Slider {...settings}>
-        {products.map((x, i) => {
-            return <div key={i} className="max-h-400px">
-                <img src={x.img} className="mx-auto"/>
-            </div>
-        })}
+         {children}
         </Slider>
       </div>
     );

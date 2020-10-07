@@ -6,8 +6,33 @@ import Carousel from '../components/carousel'
 
 
 export default function Home() {
+  const products =[
+    {
+       img: '../images/homepage/arrival1.png',
+       icon: '../images/homepage/icon1.png',
+       iconTitle: 'Original & Modern Motifs' 
+    },
+    {
+        img: '../images/homepage/arrival2.png',
+        icon: '../images/homepage/icon2.png',
+       iconTitle: 'Fabric Innovation'  
+     },
+     {
+        img: '../images/homepage/arrival3.png',
+        icon: '../images/homepage/icon3.png',
+       iconTitle: 'Sustainable'  
+     },
+     {
+        img: '../images/homepage/arrival2.png',
+        icon: '../images/homepage/icon4.png',
+       iconTitle: 'High-quality Sourcing'  
+     },
+     {
+        img: '../images/homepage/arrival1.png' 
+     },
+]
   return (
-    <Layout home>
+    <Layout >
       <Head>
         <title>{siteTitle}</title>
       </Head>
@@ -18,8 +43,29 @@ export default function Home() {
           </a>
         </div>
 
-        <div className="pancasila-bateeq flex mb-24 phone:flex-col">
-         <div className="flex-1 text-center mx-6 phone">
+       
+        {/* <Carousel>
+       
+          {products.map((x, i) => {
+            return <div key={i} className="flex-1 text-center mb-6">
+                <img src={x.icon} className="mx-auto"/>
+                <div className="info-pancasila text-center ">
+               <h1 className={utilStyles.pancaTitle}>
+               {x.iconTitle}
+               </h1>
+            </div>
+            </div>
+           
+        })}
+       
+          </Carousel> */}
+        
+       
+       
+       
+
+        <div className="pancasila-bateeq lg:w-full flex mb-24 phone:flex-col">
+         <div className="flex-1 text-center mx-6 phone:mb-6">
             <img src="/images/homepage/icon1.png" className="mx-auto" />
             <div className="info-pancasila text-center ">
                <h1 className={utilStyles.pancaTitle}>
@@ -27,7 +73,7 @@ export default function Home() {
                </h1>
             </div>
           </div>
-          <div className="flex-1 justify-center mx-6">
+          <div className="flex-1 justify-center mx-6 phone:mb-6">
             <img src="/images/homepage/icon2.png" className="mx-auto"/>
             <div className="info-pancasila text-center ">
                <h1 className={utilStyles.pancaTitle}>
@@ -35,7 +81,7 @@ export default function Home() {
                </h1>
             </div>
           </div>
-          <div className="flex-1 justify-center mx-6">
+          <div className="flex-1 justify-center mx-6 phone:mb-6">
             <img src="/images/homepage/icon3.png" className="mx-auto"/>
             <div className="info-pancasila text-center ">
                <h1 className={utilStyles.pancaTitle}>
@@ -43,7 +89,7 @@ export default function Home() {
                </h1>
             </div>
           </div>
-          <div className="flex-1 justify-center mx-6">
+          <div className="flex-1 justify-center mx-6 phone:mb-6">
             <img src="/images/homepage/icon4.png" className="mx-auto"/>
             <div className="info-pancasila text-center ">
                <h1 className={utilStyles.pancaTitle}>
@@ -67,49 +113,53 @@ export default function Home() {
 
       
           <Carousel >
-          
+          {products.map((x, i) => {
+            return <div key={i} className="max-h-400px">
+                <img src={x.img} className="mx-auto"/>
+            </div>
+        })}
           </Carousel>
        
 
         <div className="banner-4 flex mb-24 phone:flex-col">
-        <div className="flex-1 mx-6">
+        <div className="flex-1 mx-6 phone:mb-6">
             <img src="/images/homepage/Baneer4_1.png" className="mx-auto" />
             <div className="info-banner4 lg:max-w-500px mx-auto">
-               <h1 className={utilStyles.Banner4Title}>
+               <h1 className="font-normal text-left text-title mt-6 phone:mt-0">
                Designer's Pick
                </h1>
                <p className="text-lg text-left mt-3">Best pieces curated by our designer</p>
                <div className="text-left text-xl mt-10">
-               <a href="/" className="uppercase hover:underline text-2xl">view & shop the style</a>
+               <a href="/" className="uppercase underline text-2xl text-black">view & shop the style</a>
                </div>
             </div>
           </div>
-          <div className="flex-1 text-center mx-6">
+          <div className="flex-1 text-center mx-6 phone:mb-6" >
             <img src="/images/homepage/Banner4_2.png" className="mx-auto" />
             <div className="info-banner4 lg:max-w-500px mx-auto">
-               <h1 className={utilStyles.Banner4Title}>
+               <h1 className="font-normal text-left text-title mt-6 phone:mt-0">
                For Your Precious One
                </h1>
                <p className="text-lg text-left mt-3">Your precious one’s favorite My Little Ponny Collection </p>
                <div className="text-left text-xl mt-10">
-               <a href="/" className="uppercase hover:underline text-2xl text-black">Discover Now</a>
+               <a href="/" className="uppercase underline text-2xl text-black">Discover Now</a>
                </div>
             </div>
           </div>
         </div>
 
-        <div className="iframe-video w-full flex h-auto mb-24 items-center">
-          <div className="flex-initial w-4/6">
-          <iframe className="w-full h-500px" src="https://www.youtube.com/embed/pKENLTKIm-o">
+        <div className="iframe-video w-full flex h-auto mb-24 items-center phone:flex-col tablet:px-4">
+          <div className="flex-1 phone:pt-iframe pt-36% relative max-w-900px w-full overflow-hidden">
+          <iframe className="w-full absolute h-full inset-0" src="https://www.youtube.com/embed/pKENLTKIm-o">
           </iframe>
           </div>
-          <div className="flex-initial  ml-12">
-            <p className="text-lg text-left">Discover our latest collection</p>
-            <h1 className={utilStyles.Banner4Title}>
+          <div className="flex-initial  ml-12 phone:ml-0 phone:text-center">
+            <p className="text-lg md:text-left phone:mb-2">Discover our latest collection</p>
+            <h1 className="md:text-left text-title mt-6 phone:mt-0 font-normal">
             F/W 2020 KASADA
                </h1>
-          <div className="text-left text-xl mt-10">
-               <a href="/" className="uppercase hover:underline text-black text-2xl">VIEW THE COLLECTION</a>
+          <div className="md:text-left text-xl mt-10 phone:mt-0">
+               <a href="/" className="uppercase underline text-black text-2xl">VIEW THE COLLECTION</a>
                </div>     
           </div>
 

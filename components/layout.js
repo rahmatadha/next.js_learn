@@ -29,7 +29,7 @@ export default function Layout({ children}) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Header />
-    <div className="container mx-auto">
+    <div className="lg:container mx-auto phone:w-full tablet:w-full">
      
         <main>{children}</main>
       
