@@ -50,6 +50,8 @@ module.exports = {
         '6xl': '4rem',
         '7xl': '5rem',
         '30' : '30px',
+        '20' : '20px',
+        '24' : '24px',
     },
     extend: {
       colors: {
