@@ -12,13 +12,13 @@ module.exports = {
       'md': '768px',
       // => @media (min-width: 768px) { ... }
 
-      'lg': '1024px',
+      'lg': '1025px',
       // => @media (min-width: 1024px) { ... }
 
       'xl': '1240px',
       // => @media (min-width: 1240px) { ... }
       'phone': {'min': '320px', 'max': '767px'},
-      'tablet':{'min': '768px', 'max':'1023px'},
+      'tablet':{'min': '768px', 'max':'1024px'},
     },
     
     fontSize:{

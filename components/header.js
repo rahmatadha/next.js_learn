@@ -135,12 +135,12 @@ export default  function Header(){
                     <a href="#responsive-header" className="text-black">
                         <svg className="inline-block lg:mt-0 "  width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="0.5" y="3.5" width="12" height="11" rx="0.5" stroke="black"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 1C5.67157 1 5 1.67157 5 2.5V5.5H4L4 2.5C4 1.11929 5.11929 0 6.5 0C7.88071 0 9 1.11929 9 2.5V5.5H8V2.5C8 1.67157 7.32843 1 6.5 1Z" fill="black"/>
+                            <path fillRule="evenodd" clipRule="evenodd" d="M6.5 1C5.67157 1 5 1.67157 5 2.5V5.5H4L4 2.5C4 1.11929 5.11929 0 6.5 0C7.88071 0 9 1.11929 9 2.5V5.5H8V2.5C8 1.67157 7.32843 1 6.5 1Z" fill="black"/>
                         </svg>
                         <span className="pl-1">0</span>
                     </a>
             </div>
-            <div className="mt-4 inline-block lg:mt-0 mr-6 text-base">
+            <div className="mt-4 inline-block lg:mt-0 mr-4 text-base">
                     <a href="#responsive-header" className="text-black">
                     <svg className="inline-block lg:mt-0 " width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.8033 9.69668C11.9864 8.87982 11.0141 8.27511 9.95329 7.90904C11.0895 7.12649 11.8359 5.81684 11.8359 4.33594C11.8359 1.94511 9.89083 0 7.5 0C5.10917 0 3.16406 1.94511 3.16406 4.33594C3.16406 5.81684 3.91052 7.12649 5.04674 7.90904C3.9859 8.27511 3.01359 8.87982 2.19671 9.69668C0.780147 11.1133 0 12.9967 0 15H1.17188C1.17188 11.5107 4.01065 8.67188 7.5 8.67188C10.9893 8.67188 13.8281 11.5107 13.8281 15H15C15 12.9967 14.2199 11.1133 12.8033 9.69668ZM7.5 7.5C5.75534 7.5 4.33594 6.08063 4.33594 4.33594C4.33594 2.59125 5.75534 1.17188 7.5 1.17188C9.24466 1.17188 10.6641 2.59125 10.6641 4.33594C10.6641 6.08063 9.24466 7.5 7.5 7.5Z" fill="black"/>
@@ -152,13 +152,13 @@ export default  function Header(){
             <div className="block mt-4 lg:inline-block lg:mt-0 text-black hover:underline font-normal uppercase text-base">
                     <PopupLogin visible={visible} handleCancel={handleCancel} handleOk={handleOk} />
                     <PopupRegister visiblereg={visiblereg} handleCancelreg={handleCancelreg} handleOkreg={handleOkreg} />
-                    <Button onClick={showModalreg}>
-                        Register
-                    </Button>
-                    <Button onClick={showModal}>
-
+                    <button onClick={showModal} className="px-2 py-1 uppercase">
                     Login
-                    </Button>
+                    </button>
+                    <button onClick={showModalreg} className="px-2 py-1 uppercase">
+                        Register
+                    </button>
+                   
 
             </div>
             </div>
