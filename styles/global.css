@@ -200,7 +200,21 @@ img {
 @media all and (max-width: 768px) {
 .responproduct{
   width: 73% !important;
-}
+  }
+   /* Login */
+   .grid-input-respas1,
+   .grid-input-respas{
+     margin: 0 25% 1.5rem !important;
+   }
+ 
+   .btnlogin button,
+   .btnphoneregis button{
+     width: 50% !important;
+   }
+ 
+   .gridInput input{
+     width: 10% !important;
+   }
 }
 
 @media all and (max-width: 481px) {
@@ -230,10 +244,10 @@ img {
     width: 83%;
   }
   .btnphoneregis button {
-    width: 87%;
+    width: 87% !important;
   }
   .responproduct{
-    width: 87% !important;
+    width: 75% !important;
   }
 
 }

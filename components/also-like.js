@@ -3,7 +3,7 @@ import { Card,Pagination,Row,Col } from 'antd';
 export default  function Alsolike () {
     const { Meta } = Card;
     return(
-        <div className="w-87% m-auto responproduct">
+        <div className="w-90% m-auto responproduct">
             <Row>
                 <div className="mx-4 mb-10">
                 <Card

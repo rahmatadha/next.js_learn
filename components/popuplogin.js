@@ -60,10 +60,10 @@ export default  function Popuplogin ({visible, handleCancel, handleOk}) {
             > */}
               <Input.Password id="border" />
             {/* </Form.Item> */}
-            <div className="text-right text-black mt-2">
+            <div className="text-right text-black mt-4">
               <Link href="/login/forget-pass"><a className="text-black underline">Forgot Password?</a></Link>
               </div>
-              <div className="my-6">
+              <div className="my-12">
               <Checkbox>Remember me</Checkbox>
               </div>
             </div>
