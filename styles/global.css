@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  font-family: 'Lato', sans-serif;
   line-height: 1.6;
   font-size: 13.5px;
 }
@@ -21,6 +23,57 @@ img {
   display: block;
 }
 
+.ant-input,
+.ant-input-password,
+.ant-select-selector{
+  border: 1px solid #000000 !important;
+}
+#border{
+  border: white !important;
+}
+
+/****LGoin******/
+.grid-input-respas input{
+  width: 100%;
+  height: 30px;
+  border: 1px solid #000000;
+}
+.grid-input-respas{
+  margin: 0 37% 40px;
+  text-align: left;
+}
+.wrepper-header-log p{
+  width: 85%;
+  float: left;
+}
+#text-black{
+  color: #000000 !important;
+}
+#button-loggoo{
+  width: 100%;
+  background-color: #B3191D;
+  color: #ffffff;
+  margin: 0 0 10px;
+  border: 1px solid #B3191D;
+  border-radius: 2px;
+}
+#button-logtwit{
+  width: 48%;
+  float: left;
+  background-color: #45B9EA;
+  color: #ffffff;
+  border: 1px solid #45B9EA;
+  border-radius: 2px;
+}
+#button-logfb{
+  width: 48%;
+  float: right;
+  background-color: #314E9E;
+  color: #ffffff;
+  border: 1px solid #314E9E;
+  border-radius: 2px;
+}
+
 .slick-prev{
   left: 25px !important;
   z-index: 1;
@@ -33,6 +86,44 @@ img {
 .gridInput{
   margin: 0 0 40px 0;
 }
+.grid-inputreg p{
+  margin: 5px 0;
+}
+.wrepper-header-reg,
+.wrepper-header-log,
+.grid-logwith{
+  display: flow-root;
+}
+
+.wrepper-header-reg p{
+  width: 88%;
+  float: left;
+}
+.wrepper-reg{
+  padding: 46px 60px;
+}
+#button-reg{
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  margin: 0 0 33px;
+  border: 1px solid #000000;
+  border-radius: 2px;
+}
+#button-link-log{
+  padding: unset;
+  border-color: #ffffff;
+  text-decoration: underline;
+}
+#button-link-log p{
+  text-decoration: underline;
+}
+
+#button-reg:hover{
+  background-color: #ffffff;
+  color: #000000;
+}
+
 .gridInput input{
   margin: 0 10px;
   width: 3%;
@@ -41,7 +132,8 @@ img {
   border-right: unset;
   border-left: unset;
 }
-.btnphoneregis button{
+.btnphoneregis button,
+.btnlogin button{
   background-color: #000000;
   color: #ffffff;
   height: 30px;
@@ -50,7 +142,11 @@ img {
   width: 25%;
 }
 
-.btnphoneregis button:hover{
+.btnlogin button{
+  width: 26% !important;
+}
+
+.btnphoneregis button:hover,.btnlogin button:hover{
   background-color: #ffffff;
   color: #000000;
 }
@@ -72,4 +168,20 @@ img {
   /* background-color: dodgerblue; */
   /* color: white; */
   border-bottom: 1px solid #000000;
+}
+
+.mx-8pr{
+  margin: 0 7%;
+}
+
+@media all and (max-width: 481px) {
+  .wrepper-reg{
+    padding: 25px 0;
+  } 
+  .wrepper-header-reg p{
+    width: 86%;
+  }
+  .wrepper-header-log p{
+    width: 83%;
+  }
 }
