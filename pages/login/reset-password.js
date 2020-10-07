@@ -4,7 +4,7 @@ export default function Resetpassword () {
     return (
         <div>
             <div className={phoneStyles.center}>
-                <h2 className="font-bold text-left w-3/12 m-auto mb-6">Reset Password</h2>
+                <h2 className="font-bold text-left grid-input-respas1">Reset Password</h2>
 
                 <div className="grid-input-respas" >
                     <label className="text-left">New Password*</label>

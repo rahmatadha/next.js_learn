@@ -4,8 +4,8 @@ export default function Forgetpassword () {
     return (
         <div>
             <div className={phoneStyles.center}>
-                <h2 className="font-bold text-left w-3/12 m-auto mb-6">Forgot Password</h2>
-                <p className="mb-6 w-3/12 m-auto text-left text-base">Input registered email or phone number. A verification number will be sent to reset your password.</p>
+                <h2 className="font-bold text-left grid-input-respas1">Forgot Password</h2>
+                <p className="grid-input-respas1 text-left text-base">Input registered email or phone number. A verification number will be sent to reset your password.</p>
                 <div className="grid-input-respas" >
                     <label className="text-left">Phone Number or Email*</label>
                     <br/>
@@ -24,7 +24,7 @@ export default function Forgetpassword () {
                 </div>
                 <div className="btnlogin text-center">
                     <button className="mb-6">RESET PASSWORD</button>
-                    <p>Waiting for  xx seconds to resend verification code</p>
+                    <p className="grid-input-respas1">Waiting for  xx seconds to resend verification code</p>
                 </div>
             </div>            
         </div>

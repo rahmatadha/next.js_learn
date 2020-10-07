@@ -20,7 +20,7 @@ export default function Search() {
 
             <Cardproduct/>
             <div className="mx-8pr">
-                <h2 className="text-30">You May Also Like</h2>
+                <h2 className="text-30 tablet:text-center">You May Also Like</h2>
             </div>
             <Alsolike/>
         </Layout>

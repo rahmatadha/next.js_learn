@@ -38,10 +38,26 @@ img {
   height: 30px;
   border: 1px solid #000000;
 }
+.grid-input-respas1{
+  margin: 0 37% 1.5rem !important;
+}
 .grid-input-respas{
   margin: 0 37% 40px;
   text-align: left;
 }
+.login-with{
+  width: 100%; 
+  text-align: center; 
+  border-bottom: 1px solid #000; 
+  line-height: 0.1em;
+  margin: 10px 0 20px; 
+}
+
+.login-with span{
+  background:#fff; 
+  padding:0 10px; 
+}
+
 .wrepper-header-log p{
   width: 85%;
   float: left;
@@ -89,6 +105,11 @@ img {
 .grid-inputreg p{
   margin: 5px 0;
 }
+#inputphone{
+  width: 77%;
+  float: right;
+}
+
 .wrepper-header-reg,
 .wrepper-header-log,
 .grid-logwith{
@@ -127,6 +148,8 @@ img {
 .gridInput input{
   margin: 0 10px;
   width: 3%;
+  font-size: 30px;
+  height: 42px;
   border-bottom: 1px solid #000000;
   border-top: unset;
   border-right: unset;
@@ -174,7 +197,29 @@ img {
   margin: 0 7%;
 }
 
+@media all and (max-width: 768px) {
+.responproduct{
+  width: 73% !important;
+}
+}
+
 @media all and (max-width: 481px) {
+
+  /* Login */
+  .grid-input-respas1,
+  .grid-input-respas{
+    margin: 0 20px 1.5rem !important;
+  }
+
+  .btnlogin button{
+    width: 87% !important;
+  }
+
+  .gridInput input{
+    width: 17% !important;
+  }
+
+  /* Register */
   .wrepper-reg{
     padding: 25px 0;
   } 
@@ -183,5 +228,28 @@ img {
   }
   .wrepper-header-log p{
     width: 83%;
+  }
+  .btnphoneregis button {
+    width: 87%;
+  }
+  .responproduct{
+    width: 87% !important;
+  }
+
+}
+
+@media all and (max-width: 340px) {
+  #inputphone{
+    width: 70%;
+  }
+
+  .wrepper-header-log p {
+    width: 79%;
+  }
+  .wrepper-header-reg p {
+    width: 84%;
+  }
+  .responproduct {
+    width: 87% !important;
   }
 }

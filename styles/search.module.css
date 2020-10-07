@@ -23,3 +23,14 @@
     margin: 138px 0;
     display: flow-root;
 }
+
+@media all and (max-width: 481px) {
+    .titleSearch {
+        display: grid;
+    }
+    .w50left,.w50right {
+        float: unset;
+        width: 100%;
+        text-align: center;
+    }
+}
