@@ -1,6 +1,41 @@
 import Link from 'next/link'
+import PopupLogin from '../components/popuplogin'
+import PopupRegister from '../components/popupregister'
+import React, { useState } from 'react';
+import { Button } from 'antd';
 
 export default  function Header(){
+    const [visible, setVisible] = useState(false)
+
+    const showModal = () => {
+      setVisible(true)
+    };
+  
+    const handleOk = e => {
+      console.log(e);
+      setVisible(false)
+    };
+  
+    const handleCancel = e => {
+      setVisible(false)
+    };
+
+// register
+
+    const [visiblereg, setVisiblereg] = useState(false)
+
+    const showModalreg = () => {
+      setVisiblereg(true)
+    };
+  
+    const handleOkreg = e => {
+      console.log(e);
+      setVisiblereg(false)
+    };
+  
+    const handleCancelreg = e => {
+      setVisiblereg(false)
+    };
     return(
         <header className="shadow-lg">
           <nav class="flex items-center justify-between flex-wrap ">
@@ -98,9 +133,15 @@ export default  function Header(){
                     </a>
             </div>
             <div className="block mt-4 lg:inline-block lg:mt-0 text-black hover:underline font-normal uppercase text-base">
-                    <a href="#responsive-header">
+                    <PopupLogin visible={visible} handleCancel={handleCancel} handleOk={handleOk} />
+                    <PopupRegister visiblereg={visiblereg} handleCancelreg={handleCancelreg} handleOkreg={handleOkreg} />
+                    <Button onClick={showModalreg}>
+                        Register
+                    </Button>
+                    <Button onClick={showModal}>
                     Login
-                    </a>
+                    </Button>
+
             </div>
           </div>
         </div>
