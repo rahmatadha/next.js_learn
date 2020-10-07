@@ -13,10 +13,6 @@ body {
   box-sizing: border-box;
 }
 
-a {
-  color: #0070f3;
-  text-decoration: none;
-}
 
 a:hover {
   text-decoration: underline;
@@ -78,7 +74,15 @@ img {
   border-radius: 2px;
 }
 
-/******phone register/Register********/
+.slick-prev{
+  left: 25px !important;
+  z-index: 1;
+}
+.slick-next{
+  right: 25px !important;
+  z-index: 1;
+}
+/******phone register********/
 .gridInput{
   margin: 0 0 40px 0;
 }
